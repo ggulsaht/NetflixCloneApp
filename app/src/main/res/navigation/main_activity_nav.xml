@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_nav"
+    app:startDestination="@id/anaSayfa">
+
+    <fragment
+        android:id="@+id/anaSayfa"
+        android:name="com.example.maxcloneapp.AnaSayfa"
+        android:label="fragment_ana_sayfa"
+        tools:layout="@layout/fragment_ana_sayfa" >
+        <action
+            android:id="@+id/detaygecis"
+            app:destination="@id/filmDetaylari" />
+    </fragment>
+    <fragment
+        android:id="@+id/filmDetaylari"
+        android:name="com.example.maxcloneapp.FilmDetaylari"
+        android:label="fragment_film_detaylari"
+        tools:layout="@layout/fragment_film_detaylari" >
+        <argument
+            android:name="filmNesnesi"
+            app:argType="com.example.maxcloneapp.Filmler" />
+    </fragment>
+</navigation>
