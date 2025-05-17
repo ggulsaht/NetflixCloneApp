@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "MaxCloneApp"
+rootProject.name = "NetflixCloneApp"
 include(":app")

@@ -1,4 +1,4 @@
-package com.example.maxcloneapp
+package com.example.netflixcloneapp
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

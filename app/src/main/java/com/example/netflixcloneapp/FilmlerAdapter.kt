@@ -1,4 +1,4 @@
-package com.example.maxcloneapp
+package com.example.netflixcloneapp
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -6,8 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
-import com.example.maxcloneapp.databinding.CardTasarimBinding
-import com.example.maxcloneapp.databinding.FragmentAnaSayfaBinding
+import com.example.netflixcloneapp.databinding.CardTasarimBinding
+import com.example.netflixcloneapp.databinding.FragmentAnaSayfaBinding
 
 class FilmlerAdapter(var mContext: Context, var filmlerListesi: List<Filmler>) :
     RecyclerView.Adapter<FilmlerAdapter.CardTasarimTutucu>() {

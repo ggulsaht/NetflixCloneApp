@@ -1,4 +1,4 @@
-package com.example.maxcloneapp
+package com.example.netflixcloneapp
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,8 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.navArgs
-import com.example.maxcloneapp.databinding.FragmentAnaSayfaBinding
-import com.example.maxcloneapp.databinding.FragmentFilmDetaylariBinding
+import com.example.netflixcloneapp.databinding.FragmentAnaSayfaBinding
+import com.example.netflixcloneapp.databinding.FragmentFilmDetaylariBinding
 
 class FilmDetaylari : Fragment() {
     private lateinit var binding: FragmentFilmDetaylariBinding

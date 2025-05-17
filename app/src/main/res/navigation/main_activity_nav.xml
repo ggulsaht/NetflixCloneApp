@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/anaSayfa"
-        android:name="com.example.maxcloneapp.AnaSayfa"
+        android:name="com.example.netflixcloneapp.AnaSayfa"
         android:label="fragment_ana_sayfa"
         tools:layout="@layout/fragment_ana_sayfa" >
         <action
@@ -16,11 +16,11 @@
     </fragment>
     <fragment
         android:id="@+id/filmDetaylari"
-        android:name="com.example.maxcloneapp.FilmDetaylari"
+        android:name="com.example.netflixcloneapp.FilmDetaylari"
         android:label="fragment_film_detaylari"
         tools:layout="@layout/fragment_film_detaylari" >
         <argument
             android:name="filmNesnesi"
-            app:argType="com.example.maxcloneapp.Filmler" />
+            app:argType="com.example.netflixcloneapp.Filmler" />
     </fragment>
 </navigation>

@@ -1,4 +1,4 @@
-package com.example.maxcloneapp
+package com.example.netflixcloneapp
 
 import org.junit.Test
 

@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.maxcloneapp"
+    namespace = "com.example.netflixcloneapp"
     compileSdk = 35
 
     buildFeatures {
@@ -13,7 +13,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.example.maxcloneapp"
+        applicationId = "com.example.netflixcloneapp"
         minSdk = 24
         targetSdk = 35
         versionCode = 1

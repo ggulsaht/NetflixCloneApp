@@ -13,6 +13,26 @@
         android:layout_height="wrap_content"
         android:background="@color/black">
 
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnindir"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="8dp"
+            android:padding="12dp"
+            android:text="          İndir: S:1 B:1"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:backgroundTint="@color/cardview_dark_background"
+            app:cornerRadius="12dp"
+            app:iconGravity="textStart"
+            app:iconPadding="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnOynat" />
+
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbarDetay"
             android:layout_width="0dp"
@@ -43,47 +63,45 @@
             app:iconGravity="textStart"
             app:iconPadding="12dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ivFilm" />
 
         <ImageView
             android:id="@+id/ivFilm"
-            android:layout_width="0dp"
+            android:layout_width="200dp"
             android:layout_height="204dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
-            android:src="@drawable/behzatc"
+            android:src="@drawable/detaysonsuzluk"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/toolbarDetay" />
+            app:layout_constraintTop_toBottomOf="@id/toolbarDetay"
+            app:srcCompat="@drawable/cassandra" />
 
         <TextView
             android:id="@+id/tvAciklama"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="3dp"
             android:layout_marginEnd="16dp"
-            android:fontFamily="@font/calistoga"
-            android:text="Behzat Ç (Erdal Beşikçioğlu), 1985 yılında Polis Akademisi'nden mezun olmuş, cinayet bürosunda görev yapmakta olan bir polistir..."
+            android:fontFamily="sans-serif"
             android:textColor="@color/white"
-            android:textSize="18sp"
+            android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+            app:layout_constraintTop_toBottomOf="@+id/btnindir" />
 
         <ImageView
             android:id="@+id/imageView5"
-            android:layout_width="56dp"
-            android:layout_height="48dp"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
             android:src="@drawable/listem"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnOynat" />
+            app:layout_constraintTop_toTopOf="@+id/imageView8" />
 
         <TextView
             android:id="@+id/textView2"
@@ -96,36 +114,26 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
-        <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="63dp"
-            android:layout_height="48dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:src="@drawable/fragman"
-            app:layout_constraintStart_toEndOf="@+id/textView2"
-            app:layout_constraintTop_toBottomOf="@+id/btnOynat" />
-
         <TextView
             android:id="@+id/textView3"
             android:layout_width="69dp"
             android:layout_height="20dp"
             android:layout_marginStart="16dp"
-            android:text="Fragman"
+            android:text="Puan Ver"
             android:textAlignment="center"
             android:textColor="@color/white"
             app:layout_constraintStart_toEndOf="@+id/textView2"
-            app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+            app:layout_constraintTop_toBottomOf="@+id/imageView9" />
 
         <ImageView
             android:id="@+id/imageView8"
-            android:layout_width="52dp"
-            android:layout_height="47dp"
-            android:layout_marginStart="16dp"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
             android:layout_marginTop="8dp"
             android:src="@drawable/paylas"
-            app:layout_constraintStart_toEndOf="@+id/imageView7"
-            app:layout_constraintTop_toBottomOf="@+id/btnOynat" />
+            app:layout_constraintStart_toEndOf="@+id/imageView9"
+            app:layout_constraintTop_toBottomOf="@+id/tvAciklama" />
 
         <TextView
             android:id="@+id/textView4"
@@ -143,24 +151,30 @@
             android:layout_width="61dp"
             android:layout_height="48dp"
             android:layout_marginStart="-290dp"
-            android:layout_marginTop="-60dp"
             android:src="@drawable/oynat"
-            app:layout_constraintBottom_toTopOf="@+id/imageView7"
+            app:layout_constraintBottom_toBottomOf="@+id/btnOynat"
             app:layout_constraintStart_toEndOf="@+id/btnOynat"
-            app:layout_constraintTop_toBottomOf="@+id/btnOynat"
-            app:layout_constraintVertical_bias="0.5" />
+            app:layout_constraintTop_toTopOf="@+id/btnOynat" />
 
         <ImageView
-            android:id="@+id/imageView11"
-            android:layout_width="110dp"
-            android:layout_height="42dp"
-            android:layout_marginTop="-50dp"
-            android:layout_marginEnd="-260dp"
-            android:layout_marginBottom="-50dp"
-            android:src="@drawable/max"
-            app:layout_constraintBottom_toTopOf="@+id/toolbarDetay"
-            app:layout_constraintEnd_toStartOf="@+id/toolbarDetay"
-            app:layout_constraintTop_toBottomOf="@+id/toolbarDetay" />
+            android:id="@+id/imageView"
+            android:layout_width="58dp"
+            android:layout_height="43dp"
+            android:layout_marginEnd="-180dp"
+            android:src="@drawable/indir"
+            app:layout_constraintBottom_toBottomOf="@+id/btnindir"
+            app:layout_constraintEnd_toStartOf="@+id/btnindir"
+            app:layout_constraintTop_toTopOf="@+id/btnindir" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:src="@drawable/begenme"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+            app:layout_constraintStart_toEndOf="@+id/imageView5"
+            app:layout_constraintTop_toTopOf="@+id/imageView8" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
